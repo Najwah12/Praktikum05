@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class PemilihanHari15 {
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
         
         String dayName, dayType;
 
@@ -21,6 +23,8 @@ public class PemilihanHari15 {
                 break;
             default:
                 dayType = "invalid day name";
+
+        System.out.println(dayName + "is a" + dayType);    
         }
 
     }
