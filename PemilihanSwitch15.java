@@ -19,13 +19,24 @@ public class PemilihanSwitch15 {
                 hasil = angka1 + angka2;
                 break;
             case '-':
-                hasil = angka1 + angka2;
-            case '*':
-                hasil = angka1 + angka2;
-            case '/':
-                hasil = angka1 + angka2;       
+                hasil = angka1 - angka2;
                 break;
+            case '*':
+                hasil = angka1 * angka2;
+                break;
+            case '/':
+                if (angka2 != 0) {
+                    hasil = angka1 / angka2;
+                } else {
+                    System.out.println("Pembagian dengan nol tidak dapat dilakukan.");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("Operator yang Anda masukkan tidak valid.");
+                return;
         }
+
         System.out.println(angka1 + " " + operator + " " + angka2 + " = " + hasil);
     }
 }
