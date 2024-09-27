@@ -26,6 +26,6 @@ public class PemilihanSwitch15 {
                 hasil = angka1 + angka2;       
                 break;
         }
-        System.out.println(angka1 + operator + angka2 + " = " + hasil);
+        System.out.println(angka1 + " " + operator + " " + angka2 + " = " + hasil);
     }
 }
